@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    background-color: #F6B460;
+    scroll-snap-type: y mandatory;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    scroll-snap-align: center;
+    height: 100vh;
+    position: relative;
+}
+
+.landing {
+    position: relative;
+    background: url('assets/jeepney.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 300px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+    text-align: left;
+}
+
+.title h1 {
+    font-size: 70px;
+    margin: 0;
+}
+
+.landing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1; 
+}
+
+.landing h1,
+.landing p {
+    position: relative;
+    z-index: 2; /* Ensure the text is on top of the overlay */
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.box {
+    flex: 1;
+    height: 100vh;
+    cursor: pointer;
+    transition: flex 0.3s ease-in-out; /* Animate flex property */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Default overlay color */
+    z-index: 1;
+    transition: background-color 0.3s ease-in-out; /* Animate background-color property */
+}
+
+.box:hover::before {
+    background-color: rgba(0, 0, 0, 0.2); /* Lighter overlay color on hover */
+}
+
+.box:hover {
+    flex: 0 0 calc(100vw / 2);
+}
+
+
+.box .content {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 2; /* Ensure content is above the overlay */
+}
+
+.box:hover .content {
+    display: block;
+}
+
+.bio {
+    background: url('assets/bio.jpg') no-repeat center center/cover;
+}
+
+.family {
+    background: url('assets/fam.jpg') no-repeat center center/cover;
+}
+
+.education {
+    background: url('assets/educ.jpg') no-repeat center center/cover;
+}
+
+.philosophies {
+    background: url('assets/philo.jpg') no-repeat center center/cover;
+}
+
+.works {
+    background: url('assets/works.jpg') no-repeat center center/cover;
+}
+
+.law {
+    background: url('assets/rizlaw.jpg') no-repeat center center/cover;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rizz</title>
+  </head>
+  <body>
+    <section class="landing">
+      <div class="title">
+        <h1>Heritage</h1>
+        <p>
+          Discover the enduring impact of Jose Rizal through this website, as
+          partial fulfillment for ENCE_4A. Explore his biography, family,
+          education, philosophies, works, and the Rizal Law.
+        </p>
+      </div>
+    </section>
+
+    <section id="section1">
+      <div class="container">
+        <div class="box bio" onclick="scrollToSection('section2')">
+          <div class="content">
+            <h2>Biography</h2>
+            <p>Basic Biography/Background Stuff</p>
+          </div>
+        </div>
+        <div class="box family" onclick="scrollToSection('section3')">
+          <div class="content">
+            <h2>Family</h2>
+            <p>Information about Rizal's Family</p>
+          </div>
+        </div>
+        <div class="box education" onclick="scrollToSection('section4')">
+          <div class="content">
+            <h2>Education</h2>
+            <p>Rizal's Educational Background</p>
+          </div>
+        </div>
+        <div class="box philosophies" onclick="scrollToSection('section5')">
+          <div class="content">
+            <h2>Philosophies</h2>
+            <p>Rizal's Philosophical Views</p>
+          </div>
+        </div>
+        <div class="box works" onclick="scrollToSection('section6')">
+          <div class="content">
+            <h2>Works</h2>
+            <p>Life and Works of Rizal</p>
+          </div>
+        </div>
+        <div class="box law" onclick="scrollToSection('section7')">
+          <div class="content">
+            <h2>Rizal Law</h2>
+            <p>Information about Rizal Law</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section2">
+      <h2>Biography</h2>
+      <p>Basic Biography/Background Stuff</p>
+    </section>
+
+    <section id="section3">
+      <h2>Family</h2>
+      <p>Information about Rizal's Family</p>
+    </section>
+
+    <section id="section4">
+      <h2>Education</h2>
+      <p>Rizal's Educational Background</p>
+    </section>
+
+    <section id="section5">
+      <h2>Philosophies</h2>
+      <p>Rizal's Philosophical Views</p>
+    </section>
+
+    <section id="section6">
+      <h2>Works</h2>
+      <p>Life and Works of Rizal</p>
+    </section>
+
+    <section id="section7">
+      <h2>Rizal Law</h2>
+      <p>Information about Rizal Law</p>
+    </section>
+
+    <script>
+      function scrollToSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+  </body>
+</html>
