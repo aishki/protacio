@@ -10,6 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Rizz</title>
   </head>
   <body>
@@ -39,12 +45,12 @@
             <p>Information about Rizal's Family</p>
           </div>
         </div>
-        <div class="box education" onclick="scrollToSection('section4')">
+        <!-- <div class="box education" onclick="scrollToSection('section4')">
           <div class="content">
             <h2>Education</h2>
             <p>Rizal's Educational Background</p>
           </div>
-        </div>
+        </div> -->
         <div class="box philosophies" onclick="scrollToSection('section5')">
           <div class="content">
             <h2>Philosophies</h2>
@@ -589,12 +595,12 @@
       </div>
     </section>
 
-    <section class="info-x" id="section4">
+    <!-- <section class="info-x" id="section4">
       <div class="details">
         <h2>Education</h2>
         <p>Rizal's Educational Background</p>
       </div>
-    </section>
+    </section> -->
 
     <section class="info-x" id="section5">
       <div class="column">
@@ -681,7 +687,7 @@
         </div>
 
         <div class="mask">
-          <img class="rizal" src="assets/riz.png" />
+          <img class="rizal" src="assets/rizzy.jpg" />
         </div>
 
         <div class="cnt-circle"></div>
@@ -697,45 +703,60 @@
 
       <div class="container_6">
         <div class="f-works">
-          <h3>Noli Me Tangere</h3>
-          <img src="assets/noli.jpg" class="f-img" />
-          <p class="f-descrip">
-            The novel introduces Crisostomo Ibarra, a young and idealistic
-            Filipino who returns to his homeland after completing his education
-            in Europe after seven years. Going back to his home country, his
-            eyes unfolded at the harsh realities his fellow countrymen
-            experience under the Spanish rule.
-          </p>
+          <div class="col">
+            <img src="assets/noli.jpg" class="f-img" />
+          </div>
 
-          <p>
-            The novel further explores the power struggle between the rich and
-            the poor, the exploitation of the lower class and pervasive abuse of
-            power. Appalled by such atrocities, Ibarra devised a plan to take
-            revenge on the Spanish friars. The ending of the novel? Well, it’s
-            up to you to find out.
-          </p>
+          <div class="col">
+            <h3>Noli Me Tangere</h3>
+
+            <p class="f-descrip">
+              The novel introduces <span>Crisostomo Ibarra</span>, a young and
+              idealistic Filipino who returns to his homeland after completing
+              his education in Europe after seven years. Going back to his home
+              country, his eyes unfolded at the <span>harsh realities</span> his
+              fellow countrymen experience under the Spanish rule.
+            </p>
+
+            <p class="f-descrip">
+              The novel further explores the power struggle between the rich and
+              the poor, the exploitation of the lower class and pervasive abuse
+              of power. Appalled by such atrocities, Ibarra devised a plan to
+              take
+              <span>revenge</span> on the Spanish friars. The ending of the
+              novel? Well, it’s up to you to find out.
+            </p>
+          </div>
         </div>
 
         <div class="f-works">
-          <h3>El Filibusterismo</h3>
-          <img src="assets/elfili.jpg" class="f-img" />
-          <p class="f-descrip">
-            The sequel to Rizal’s Noli me Tángere, 13 years after that prison
-            escape, we now follow Ibarra disguised as Simoun, a wealthy jeweller
-            here in El Filibusterismo (translated as The Reign of the Greed). In
-            the second novel, Simoun tries to operate within the system,
-            blending within the higher ups and forming ties with the enemies
-            while gathering strength with his newfound allies.
-          </p>
-          <p>
-            His plan was clear and carefully devised, but an unexpected turn of
-            events made an impact into the trajectory of his plan. Just like its
-            prequel, El Filibusterismo is one of the celebrated written works of
-            Jose Rizal, playing a significant role in igniting the flames of
-            nationalism among the Filipinos. Trivia: Jose Rizal dedicated El
-            Filibusterismo to the GOMBURZA, the three martyr Filipino priests
-            who were accused of subversion and were executed in the garrote.
-          </p>
+          <div class="col">
+            <img src="assets/elfili.jpg" class="f-img" />
+          </div>
+
+          <div class="col">
+            <h3>El Filibusterismo</h3>
+            <p class="f-descrip">
+              The sequel to Rizal’s Noli me Tángere, <span>13 years</span> after
+              that prison escape, we now follow Ibarra disguised as
+              <span>Simoun</span>, a wealthy jeweller here in El Filibusterismo
+              (translated as The Reign of the Greed). In the second novel,
+              Simoun tries to operate within the system, blending within the
+              higher ups and forming ties with the enemies while gathering
+              strength with his newfound allies.
+            </p>
+            <p class="f-descrip">
+              His plan was clear and carefully devised, but an unexpected turn
+              of events made an impact into the trajectory of his plan. Just
+              like its prequel, El Filibusterismo is one of the celebrated
+              written works of Jose Rizal, playing a significant role in
+              igniting the flames of
+              <span>nationalism</span> among the Filipinos. Trivia: Jose Rizal
+              dedicated El Filibusterismo to the GOMBURZA, the three martyr
+              Filipino priests who were accused of subversion and were executed
+              in the garrote.
+            </p>
+          </div>
         </div>
       </div>
     </section>

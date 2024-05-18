@@ -8,7 +8,7 @@ body {
 
 section {
     scroll-snap-align: center;
-    height: 100vh;
+    /* min-height: 100vh; */
     position: relative;
 }
 
@@ -16,7 +16,7 @@ section {
     position: relative;
     background: url('assets/jeepney.jpg') no-repeat center center/cover;
     background-attachment: fixed;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -63,7 +63,7 @@ section {
 
 .box {
     flex: 1;
-    height: 100vh;
+    min-height: 100vh;
     cursor: pointer;
     transition: flex 0.3s ease-in-out;
     position: relative;
@@ -139,12 +139,17 @@ section {
     background: url('assets/fam.jpg') no-repeat center center/cover;
 }
 
-#section3, #section5{
+#section3{
     background-color: #4E1E22;
 }
 
 .education, #section4 {
     background: url('assets/educ.jpg') no-repeat center center/cover;
+}
+
+#section5{
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .philosophies {
@@ -233,7 +238,7 @@ button.bg-change {
 /* --- */
 .info-x{
     flex: 1;
-    height: 100vh;
+    min-height: 100vh;
     cursor: pointer;
     position: relative;
     display: flex;
@@ -289,7 +294,7 @@ button.bg-change {
 
 .info {
     flex: 1;
-    height: 100vh;
+    min-height: 100vh;
     cursor: pointer;
     position: relative;
     display: flex;
@@ -562,8 +567,8 @@ button.bg-change {
   background-size: cover;
   background-position: center;
   
-  height: 100vh;
-  overflow: hidden;
+  /* min-height: 100vh;  */
+  /* overflow: hidden; */
 }
 
 
@@ -588,24 +593,29 @@ button.bg-change {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  overflow: auto;
-  height: 100vh;
+  /* overflow: auto; */
+  /* min-height: 100vh; */
   width: 100vw;
-  gap: 100px;
+  overflow-x:hidden ;
 }
 
 .f-works{
   display: flex;
   z-index: 999;
-  flex-direction: column;
+  flex-direction: row;
   color: white;
-  width: 700px;
+  width: 80vw;
+  padding: 150px;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
 .f-works h3{
   font-size: 4vw;
-  font-family: "Playfair Display", serif;
-  text-transform: uppercase;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  /* text-transform:capitalize; */
   text-align: center;
   margin: 5px 0;
   letter-spacing: -3px;
@@ -613,12 +623,26 @@ button.bg-change {
 
 .f-descrip{
   font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  color: #b6afaf;
+  font-size: 1rem;
+  /* width: 500px; */
 }
 
 .f-img{
   height: 400px;
   object-fit: cover;
   border-radius: 15px;
+}
+
+.f-descrip span{
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
 }
 
 /* philos */
@@ -640,7 +664,7 @@ button.bg-change {
     position: relative;
     aspect-ratio: 1 / 1;
     z-index: 999;
-    max-height: 100vh;
+    max-min-height: 100vh;
   }
   
   ul:hover * {
@@ -656,7 +680,7 @@ button.bg-change {
     aspect-ratio: 1 / 1;
     outline: 2px dotted rgb(140, 117, 40);
     z-index: 1;
-    max-height: 100vh;
+    max-min-height: 100vh;
   }
   
   li {
@@ -797,7 +821,7 @@ button.bg-change {
   }
 
   .rizal{
-    height: 150%;
+    height: 100%;
     position: relative;
     left: 0;
   }
@@ -805,9 +829,14 @@ button.bg-change {
   .mask {
     overflow: hidden;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    object-position: left;
+    transform: scaleX(-1);
     position: absolute;
+    /* height: 100vh; */
+    /* border-radius: 100%; */
+
     top: 0;
     left: 0;
     bottom: 0;
